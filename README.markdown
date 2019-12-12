@@ -84,7 +84,11 @@ if __name__ == '__main__':
 ````
  ### Jenkinsfile
 ````
- junit '**/test-reports/*.xml'
+ post{
+        always{
+            junit '**/test-reports/*.xml'
+        }
+    }
 ````
 
 ### Django
