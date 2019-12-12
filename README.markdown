@@ -80,7 +80,11 @@ class TestSequenceFunctions(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
+    
 ````
+``Jenkinsfile
+ junit '**/test-reports/*.xml'
+ 
 
 ### Django
 
